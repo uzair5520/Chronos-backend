@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "module": "ESNext",
+    "types": ["node"],
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": false,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "@contracts/*": ["./contracts/*"],
+      "@db/*": ["./db/*"]
+    }
+  },
+  "include": ["api", "contracts", "db", "drizzle.config.ts"]
+}
